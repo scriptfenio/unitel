@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(250,34,200);
+
+}
+body{
+    /*background-color: rgb(180,80,200);*/
+    background-color:rgb(222,200,189);
+}
+/* boot css*/
+.center{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+.flex{
+    display:flex;
+}
+.align-flex-center{
+    justify-content: center;
+    align-items:center;
+}
+.align-flex-end{
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+/* fim boot css*/
+header{
+    height:80px;
+    background-color:black;
+    padding: 10px 0;
+}
+
+
+.logo{
+    padding:0 9px;
+}
+
+.logo img{
+    width:65px;
+    
+
+}
+.input-search{
+    padding: 0 10px;
+    width:50%;
+    display:flex;
+}
+.input-search form{
+    display:flex;
+    width:100%;
+}
+.input-search input[type=text]{
+    width: calc(100% - 30px);
+    height:30px;
+}
+.input-search button{
+    width:25px;
+    border:0;
+    height:30px;
+    background-color:#febd68;
+}
+button:hover{
+    background-color:rgb(20,12,13);
+}
+.text-info-header{
+    height:50px;
+    font-size:12px;
+    margin:8px 0;
+    padding:10 20px;
+    cursor:pointer;
+
+}
+.text-info-header:hover{
+    border-radius:3px;
+    outline: 1px solid white;
+}
+.text-info-header p{
+    white-space:nowrap;
+}
+
+/*Banner*/
+.vitrine{
+    /*min-height:400px;
+    width:100%;
+    background-image:url(../img/caros1.jpg);
+    background-position: center;
+    background-size: cover;*/
+    display:flex;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    height:100%;
+
+}
+.box-vitrine{
+    position:relative;
+    margin:20px;
+    width:21%;
+    background-color:white;
+    padding: 8px 12px;
+    
+}
+.box-vitrine img{
+    width:100%;
+
+}
+
+/*Logica para o caroussel*/
+.vitrine-galeria{
+    position:relative;
+    /*left:0;
+    top:0;*/
+    width:100%;
+    overflow-x:hidden;
+    margin:0;
+}
+.vitrine-galeria img{
+    position:relative;
+    width: 200%;
+    height:600px;
+    margin:0;
+}
+.vitrine-galeria-wraper{
+    display:flex;
+}
